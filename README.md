@@ -6,7 +6,7 @@
 | ------------------- | --------------------|
 | **Description**     | This Homepage made for anime 'Alya Sometimes Hides Her Feelings in Russian' using Tailwind for Practicing Purposes. |
 | **Project Started**    | September 23, 2024 - October 3, 2024 |
-| **Current Version** | v1.0.0| 
+| **Current Version** | v1.0.1| 
 
 
 ## Technologies Used for this Application
