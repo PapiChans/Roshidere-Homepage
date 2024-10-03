@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<head>
+    <title>милашка</title>
+    <link rel="shortcut icon" href="/assets/images/alya-icon.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+    <link rel="stylesheet" href="/assets/libs/aos/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<div id="preloader" class="bg-slate-200 w-full min-h-screen z-20 flex items-center justify-center fixed inset-0">
+  <div class="flex flex-col items-center">
+      <img data-aos="fade-up" data-aos-duration="1000" src="/assets/images/Roshidere-logo.png" alt="Logo" class="cursor-pointer lg:w-96 md:w-80 sm:w-72 xs:w-60 mb-4" />
+      <div data-aos="fade-up" data-aos-duration="1500" class="flex justify-center">
+          <i class="fa-solid fa-spinner text-5xl animate-spin text-custom-violet"></i>
+      </div>
+  </div>
+</div>
+<body class="font-[Poppins] h-full w-full">
+    <div class="justify-center align-middle flex px-20">
+        <nav id="navbar" class="bg-slate-100 h-14 lg:h-14 mt-4 rounded-xl px-8 shadow-lg z-10 lg:flex md:block sm:block xs:block fixed w-11/12">
+          <div id="navbar_navi" class="flex items-center align-middle w-full h-full">
+              <div class="w-1/2 flex items-center">
+                  <img src="/assets/images/Roshidere-logo.png" alt="Logo" class="cursor-pointer w-20" />
+              </div>
+              <button class="md:w-1/2 flex justify-end lg:hidden w-full">
+                  <svg id="menu-button" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="3" y1="12" x2="21" y2="12"></line>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <line x1="3" y1="18" x2="21" y2="18"></line>
+                  </svg>
+              </button>
+          </div>
+          <div id="menu" class="w-full lg:flex justify-center hidden flex-col">
+              <ul class="flex lg:flex-row flex-col font-medium gap-6 justify-end">
+                  <li class="text-slate-800 cursor-pointer"><a class="hover:text-custom-violet transition-all" href="#page-home">Home</a></li>
+                  <li class="text-slate-800 cursor-pointer"><a class="hover:text-custom-violet transition-all" href="#page-news">News</a></li>
+                  <li class="text-slate-800 cursor-pointer"><a class="hover:text-custom-violet transition-all" href="#page-characters">Characters</a></li>
+                  <li class="text-slate-800 cursor-pointer"><a class="hover:text-custom-violet transition-all" href="#page-story">Story</a></li>
+                  <li class="text-slate-800 cursor-pointer"><a class="hover:text-custom-violet transition-all" href="#page-social">Social</a></li>
+              </ul>
+          </div>
+        </nav>
+    </div>
+    <div id="page-home" class="bg-bg-1 bg-scroll bg-no-repeat bg-center bg-cover lg:h-screen md:h-auto sm:h-auto xs:h-auto w-full items-center">
+      <div class="w-full h-full lg:flex md:block sm:block xs:block justify-center p-12 pt-24">
+        <div data-aos="fade-up" data-aos-duration="1500" class="flex flex-col items-center justify-center lg:w-1/2 md:w-full sm:w-full xs:w-full h-full p-4 bg-stone-400 bg-opacity-0 transition-all rounded-xl duration-300 hover:bg-opacity-15" id="home-novel-cover">
+          <img src="/assets/images/novel-covers/nvl-cv-1.png" alt="Novel" class="cursor-pointer w-auto lg:h-5/6 md:h-4/6 sm:h-4/6 xs:h-4/6 transition-all duration-300 hover:border-8 border-custom-violet" />
+          <p class="cursor-pointer mt-2 text-slate-100 text-xl font-bold bg-gray-950 bg-opacity-50 rounded-md px-2">Light Novel Vol. 1</p>
+          <button class="mt-4 bg-custom-violet transition-all duration-300 hover:bg-custom-orchid lg:w-2/6 md:w-2/6 sm:w-3/6 xs:w-4/6 h-16 shadow-lg rounded-2xl font-bold text-slate-100 text-xl">Read</button>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1500" class="flex flex-col items-center justify-center lg:w-1/2 md:w-full sm:w-full xs:w-full h-full p-4 bg-stone-400 bg-opacity-0 transition-all rounded-xl duration-300 hover:bg-opacity-15" id="home-game-cover">
+          <img src="/assets/images/roshidere-pp-icon.jpg" alt="App Icon" class="cursor-pointer lg:w-auto lg:h-auto md:w-1/2 md:h-1/2 transition-all duration-300 hover:border-8 border-custom-violet" />
+          <p class="cursor-pointer mt-2 text-slate-100 text-xl font-bold bg-gray-950 bg-opacity-50 rounded-md px-2">Puzzle Party</p>
+          <img src="/assets/images/download-buttons.png" alt="App Icon" class="cursor-pointer w-auto h-2/5" />
+        </div>
+      </div>
+    </div>  
+    <div id="page-news" class="bg-zinc-100 h-auto w-full items-center block">
+      <div class="w-full h-full block justify-center p-12 pt-20">
+          <div data-aos="fade-up" data-aos-duration="1500" class="w-full items-center flex flex-col cursor-pointer">
+              <h1 class="text-center text-5xl font-bold text-gray-900 tracking-wide transition-all duration-300 border-b-8 border-slate-700 hover:text-custom-violet">NEWS</h1>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1500" class="w-full h-auto lg:flex md:grid md:grid-cols-2 md:gap-4 my-4 justify-center items-center">
+            <div data-aos="zoom-in" data-aos-duration="1000" class="flex-col lg:w-1/4 md:w-full mx-2 my-4 h-auto bg-slate-100 border-8 transition-all duration-300 lg:grayscale hover:grayscale-0 border-custom-violet rounded-md cursor-pointer shadow-lg">
+              <div class="h-1/2 w-full">
+                <img src="/assets/images/news/news-2.png"/>
+              </div>
+              <div class="lg:min-h-60 md:min-h-52 w-full bg-slate-50 p-4 flex-col">
+                <h5 class="font-bold text-xl justify-start">Puzzle Party App</h5>
+                <p class="font-light text-sm italic">Sep 19, 2024 3:00 PM +08</p>
+                <p class="font-light text-md mt-2">The first mobile game from Poppin Games Japan.</p>
+              </div>
+              <div class="h-auto justify-center items-centerflex w-full px-4 bg-slate-100 mb-2">
+                <h6 class="font-bold text-md text-zinc-900 mt-2 justify-end w-full flex transition-all duration-300 hover:text-custom-violet">Read More...</h6>
+              </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="1000" class="flex-col lg:w-1/4 md:w-full mx-2 my-4 h-auto bg-slate-100 border-8 transition-all duration-300 lg:grayscale hover:grayscale-0 border-custom-violet rounded-md cursor-pointer shadow-lg">
+              <div class="h-1/2 w-full">
+                <img src="/assets/images/news/news-1.jpg"/>
+              </div>
+              <div class="lg:min-h-60 md:min-h-52 w-full bg-slate-50 p-4 flex-col">
+                <h5 class="font-bold text-xl justify-start">Season 2 in Production</h5>
+                <p class="font-light text-sm italic">Sep 18, 2024 11:00 PM +08</p>
+                <p class="font-light text-md mt-2">The Alya Sometimes Hides Her Feelings in Russian anime is set to get a second season.</p>
+              </div>
+              <div class="h-auto justify-center items-center flex w-full px-4 bg-slate-100 mb-2">
+                <h6 class="font-bold text-md text-zinc-900 mt-2 justify-end w-full flex transition-all duration-300 hover:text-custom-violet">Read More...</h6>
+              </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="1000" class="flex-col lg:w-1/4 md:w-full mx-2 my-4 h-auto bg-slate-100 border-8 transition-all duration-300 lg:grayscale hover:grayscale-0 border-custom-violet rounded-md cursor-pointer shadow-lg">
+              <div class="h-1/2 w-full">
+                <img src="/assets/images/news/news-3.jpg"/>
+              </div>
+              <div class="lg:min-h-60 md:min-h-52 w-full bg-slate-50 p-4 flex-col">
+                <h5 class="font-bold text-xl justify-start">Episode 5 Preview</h5>
+                <p class="font-light text-sm italic">Jul 29, 2024 9:00 AM +08</p>
+                <p class="font-light text-md mt-2">Episode 5 is set to be released in Wednesday, July 31, 2024, at 11:30 PM JST.</p>
+              </div>
+              <div class="h-auto justify-center items-center flex w-full px-4 bg-slate-100 mb-2">
+                <h6 class="font-bold text-md text-zinc-900 mt-2 justify-end w-full flex transition-all duration-300 hover:text-custom-violet">Read More...</h6>
+              </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="1000" class="flex-col lg:w-1/4 md:w-full mx-2 my-4 h-auto bg-slate-100 border-8 transition-all duration-300 lg:grayscale hover:grayscale-0 border-custom-violet rounded-md cursor-pointer shadow-lg">
+              <div class="h-1/2 w-full">
+                <img src="/assets/images/news/news-4.png"/>
+              </div>
+              <div class="lg:min-h-60 md:min-h-52 w-full bg-slate-50 p-4 flex-col">
+                <h5 class="font-bold text-xl justify-start">Main Heroine Trailer</h5>
+                <p class="font-light text-sm italic">Jun 07, 2024 8:15 PM +08</p>
+                <p class="font-light text-md mt-2">The Alya Sometimes Hides Her Feelings in Russian anime has received a character trailer for main heroine Alya Mikhailovna Kujou (Sumire Uesaka).</p>
+              </div>
+              <div class="h-auto justify-center items-center flex w-full px-4 bg-slate-100 mb-2">
+                <h6 class="font-bold text-md text-zinc-900 mt-2 justify-end w-full flex transition-all duration-300 hover:text-custom-violet">Read More...</h6>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+    <div id="page-characters" class="bg-slate-200 to-custom-orchid h-auto w-full items-center block">
+      <div class="w-full h-full block justify-center p-8 pt-20">
+        <div data-aos="fade-up" data-aos-duration="1500" class="w-full items-center flex flex-col cursor-pointer">
+          <h1 class="text-center lg:text-5xl md:text-5xl sm:text-5xl xs:text-4xl font-bold text-gray-900 tracking-wide transition-all duration-300 border-b-8 border-slate-700 hover:text-custom-violet">CHARACTERS</h1>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1500" class="w-full h-auto mt-4 lg:flex lg:grid-cols-5 md:grid sm:grid md:grid-cols-4 sm:grid-cols-3 xs:grid xs:grid-cols-1 md:gap-2 sm:gap-2 xs:gap-1 justify-center items-center">
+          <div data-aos="fade-up" data-aos-duration="1500" class="lg:w-1/5 md:w-full sm:w-full xs:w-full lg:max-h-96 lg:h-96 md:h-96 sm:h-96 xs:h-auto shadow-lg bg-slate-100 cursor-pointer rounded-md block mt-4 transition-all duration-300 p-1 border-4 hover:border-custom-violet">
+            <img src="/assets/images/characters/alya.jpg" class="h-5/6 w-full bg-auto bg-center"></img>
+              <p class="lg:text-md sm:text-sm xs:text-md font-semibold text-center w-full">Alisa Mikhailovna Kujou</p>
+              <p class="text-sm font-normal text-center w-full">CV: Sumire Uesaka</p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1500" class="lg:w-1/5 md:w-full sm:w-full xs:w-full lg:max-h-96 lg:h-96 md:h-96 sm:h-96 xs:h-auto shadow-lg bg-slate-100 cursor-pointer rounded-md block mt-4 transition-all duration-300 p-1 border-4 hover:border-custom-violet">
+            <img src="/assets/images/characters/masachika.jpg" class="h-5/6 w-full bg-auto bg-center"></img>
+              <p class="lg:text-md sm:text-sm xs:text-md font-semibold text-center w-full">Masachika Kuze</p>
+              <p class="text-sm font-normal text-center w-full">CV: Kōhei Amasaki</p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1500" class="lg:w-1/5 md:w-full sm:w-full xs:w-full lg:max-h-96 lg:h-96 md:h-96 sm:h-96 xs:h-auto shadow-lg bg-slate-100 cursor-pointer rounded-md block mt-4 transition-all duration-300 p-1 border-4 hover:border-custom-violet">
+            <img src="/assets/images/characters/maria.jpg" class="h-5/6 w-full bg-auto bg-center"></img>
+              <p class="lg:text-md sm:text-sm xs:text-md font-semibold text-center w-full">Maria Mikhailovna Kujou</p>
+              <p class="text-sm font-normal text-center w-full">CV: Yukiyo Fujii</p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1500" class="lg:w-1/5 md:w-full sm:w-full xs:w-full lg:max-h-96 lg:h-96 md:h-96 sm:h-96 xs:h-auto shadow-lg bg-slate-100 cursor-pointer rounded-md block mt-4 transition-all duration-300 p-1 border-4 hover:border-custom-violet">
+            <img src="/assets/images/characters/yuki.jpg" class="h-5/6 w-full bg-auto bg-center"></img>
+              <p class="lg:text-md sm:text-sm xs:text-md font-semibold text-center w-full">Yuki Suou</p>
+              <p class="text-sm font-normal text-center w-full">CV: Wakana Maruoka</p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1500" class="lg:w-1/5 md:w-full sm:w-full xs:w-full lg:max-h-96 lg:h-96 md:h-96 sm:h-96 xs:h-auto shadow-lg bg-slate-100 cursor-pointer rounded-md block mt-4 transition-all duration-300 p-1 border-4 hover:border-custom-violet">
+            <img src="/assets/images/characters/ayano.jpg" class="h-5/6 w-full bg-auto bg-center"></img>
+              <p class="lg:text-md sm:text-sm xs:text-md font-semibold text-center w-full">Ayano Kimishima</p>
+              <p class="text-sm font-normal text-center w-full">CV: Saya Aizawa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page-story" class="bg-gradient-to-r from-custom-lightpink via-custom-violet to-custom-orchid h-auto w-full items-center block">
+      <div class="w-full h-full block justify-center p-8 pt-20">
+        <div data-aos="fade-up" data-aos-duration="1500" class="w-full items-center flex flex-col cursor-pointer">
+          <h1 class="text-center text-5xl font-bold text-gray-900 tracking-wide transition-all duration-300 border-b-8 border-slate-700 hover:text-slate-100">STORY</h1>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1500" class="w-full h-auto border-8 border-slate-100 mt-3 rounded-md shadow-xl items-center bg-zinc-100 cursor-pointer hover:border-custom-papayawhip transition-all duration-300 p-4">
+          <div data-aos="fade-up" data-aos-duration="1500" class="flex justify-center items-center">
+            <img src="/assets/images/Roshidere-logo.png" alt="Logo" class="cursor-pointer m-3 w-96 transition-all duration-300 hover:translate-y-2" />
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1500" class="block">
+            <p class="text-lg text-gray-600 font-normal md:text-md sm:text-md xs:text-md tracking-wider m-4">Smart, refined, and strikingly gorgeous, half-Russian half-Japanese Alisa Mikhailovna Kujou is considered the idol of her school. With her long silver hair, mesmerizing blue eyes, and exceptionally fair skin, she has captured the hearts of countless male students while being highly admired by all others. Even so, due to her seemingly unapproachable persona, everyone remains wary around the near-flawless girl.</p>
+            <p class="text-lg text-gray-600 font-normal md:text-md sm:text-md xs:text-md tracking-wider m-4">One of the few exceptions is Alisa's benchmate Masachika Kuze, a relatively average boy who spends his days watching anime and playing gacha games. Despite his nonchalant demeanor, Masachika is the sole student to receive Alisa's attention. Unable to be fully honest, Alisa is frequently harsh on Masachika and only expresses her affection in Russian. Unbeknownst to her, however, Masachika actually understands the language yet simply pretends otherwise for his own amusement.</p>
+            <p class="text-lg text-gray-600 font-normal md:text-md sm:text-md xs:text-md tracking-wider m-4">As the odd pair continues to exchange witty and playful remarks, their relationship gradually grows more romantic and delightful—and Alisa might finally learn to freely convey her true feelings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page-social" class="bg-zinc-200 h-auto w-full items-center block">
+      <div class="w-full h-full block justify-center p-12 pt-20">
+        <div data-aos="fade-up" data-aos-duration="1500" class="w-full items-center flex flex-col cursor-pointer">
+          <h1 class="text-center text-5xl font-bold text-gray-900 tracking-wide transition-all duration-300 border-b-8 border-slate-700 hover:text-custom-violet">SOCIAL</h1>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1500" class="w-full h-auto mt-4 lg:flex md:grid md:grid-cols-2 md:gap-4 justify-center items-center">
+          <div class="lg:w-1/3 md:w-full h-20 border-8 border-custom-orchid shadow-lg bg-slate-100 cursor-pointer rounded-md flex items-center justify-center mt-4 transition-all duration-300 hover:translate-y-2">
+            <i class="fa-brands fa-youtube text-custom-orchid text-4xl mr-4"></i>
+            <p class="text-2xl font-semibold text-custom-orchid">ロシデレ</p>
+          </div>
+          <div class="lg:w-1/3 md:w-full h-20 border-8 border-custom-orchid shadow-lg bg-slate-100 cursor-pointer rounded-md flex items-center justify-center mt-4 transition-all duration-300 hover:translate-y-2">
+            <i class="fa-brands fa-x-twitter text-custom-orchid text-4xl mr-4"></i>
+            <p class="text-2xl font-semibold text-custom-orchid">ロシデレ</p>
+          </div>
+          <div class="lg:w-1/3 md:w-full h-20 border-8 border-custom-orchid shadow-lg bg-slate-100 cursor-pointer rounded-md flex items-center justify-center mt-4 transition-all duration-300 hover:translate-y-2"> 
+            <i class="fa-brands fa-tiktok text-custom-orchid text-4xl mr-4"></i>
+            <p class="text-2xl font-semibold text-custom-orchid">ロシデレ</p>
+          </div>
+          <div class="lg:w-1/3 md:w-full h-20 border-8 border-custom-orchid shadow-lg bg-slate-100 cursor-pointer rounded-md flex items-center justify-center mt-4 transition-all duration-300 hover:translate-y-2">
+            <i class="fa-brands fa-facebook text-custom-orchid text-4xl mr-4"></i>
+            <p class="text-2xl font-semibold text-custom-orchid">ロシデレ</p>
+          </div>
+          <div class="lg:w-1/3 md:w-full h-20 border-8 border-custom-orchid shadow-lg bg-slate-100 cursor-pointer rounded-md flex items-center justify-center mt-4 transition-all duration-300 hover:translate-y-2"> 
+            <i class="fa-brands fa-reddit text-custom-orchid text-4xl mr-4"></i>
+            <p class="text-2xl font-semibold text-custom-orchid">ロシデレ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="bg-gradient-to-r from-zinc-600 via-zinc-800 to-zinc-600 h-8 flex justify-center w-full">
+      <div class="w-11/12 p-2 flex">
+        <div class="w-full text-center"><p class="text-gray-300 lg:text-sm md:text-sm sm:text-sm xs:text-xs hover:text-custom-violet transition-all cursor-pointer">Alya Sometimes Hides Her Feelings in Russian</p></div>
+      </div>
+    </footer>
+        
+</body>
+    <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'xs': '320px',  // Extra small devices (phones, 320px and up)
+          'sm': '576px',  // Small devices (tablets, 576px and up)
+          'md': '768px',  // Medium devices (small laptops, 768px and up)
+          'lg': '992px',  // Large devices (desktops, 992px and up)
+          'xl': '1200px', // Extra large devices (large desktops, 1200px and up)
+          '2xl': '1400px' // 2x extra large devices (larger desktops, 1400px and up)
+        },
+        extend: {
+            backgroundColor: {
+            'custom-orchid': '#F0A8D0',
+            'custom-violet': '#F7B5CA',
+            'custom-lightpink': '#FFC6C6',
+            'custom-papayawhip': '#FFEBD4',
+          },
+            colors: {
+            'custom-orchid': '#F0A8D0',
+            'custom-violet': '#F7B5CA',
+            'custom-lightpink': '#FFC6C6',
+            'custom-papayawhip': '#FFEBD4',
+          },
+            backgroundImage: {
+              'bg-1': "url('/assets/images/backgrounds/bg-1.jpg')",
+          },
+        }
+      }
+    }
+  </script>
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/libs/aos/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>
