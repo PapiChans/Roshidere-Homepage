@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spin {
+    animation: spin 0.5s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    transition: max-height 0.5s ease-in-out;
+    max-height: 56px;
+    overflow: hidden;
+}
+
+#navbar.expanded {
+    max-height: 300px;
+}
+
+#navbar.unexpanded {
+    max-height: 56px;
+}
